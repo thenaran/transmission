@@ -1,0 +1,42 @@
+{
+    "application": {
+        "description": "(BETA) Transmission BitTorrent",
+        "language": "english",
+        "author": "transmissionbt.com",
+        "url": "http://transmissionbt.com",
+        "country": "KOR",
+        "sdk-version": "0.20.140919",
+        "labels": [
+            "torrent",
+            "media"
+        ],
+        "devices": [
+            "storage",
+            "web"
+        ],
+        "display": "Transmission",
+        "priority": "0",
+        "version": "2.52.141110",
+        "shares": [
+            "*:*:/home/transmission/download"
+        ],
+        "requires": [],
+        "ports": [
+            9091
+        ],
+        "name": "transmission"
+    },
+    "dependency": {
+        "python": [
+            "six",
+            "transmissionrpc"
+        ],
+        "make": [
+            "/lib"
+        ],
+        "system": [
+            "sudo",
+            "transmission-daemon"
+        ]
+    }
+}
